@@ -111,11 +111,7 @@ class IDS:
 		decoder_testY = decoder_testY[0].values 
 		model = KNN(smaller_trainX,smaller_testX)
 		pred = model.knn_main_code(smaller_trainX,smaller_testX,smaller_trainY,5)
-		print('got ' + str(model.get_accuracy(pred,decoder_testY)*100) + '% predictions correct') 
-       
-   
-   
-		
+		print('got ' + str(model.get_accuracy(pred,decoder_testY)*100) + '% predictions correct') 		
 		
 ids = IDS()
 ids.feature_reduction()
@@ -123,17 +119,3 @@ ids.normalizing_datasets()
 ids.prepare_dataset_for_written_knn()
 #ids.prepare_dataset_decision_tree()
 ids.svm_with_third_party()
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
